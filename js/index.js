@@ -1,4 +1,4 @@
-const link = document.querySelector('a');
+/*const link = document.querySelector('a');
 link.textContent = 'YouTube';
 link.href = 'http:www.youtube.com'
 
@@ -36,7 +36,7 @@ const clockDisplay = document.querySelector('.clock');//годинник
 setInterval(
     () => (clockDisplay.innerText = new Date().toLocaleTimeString()),//викликаю годинник
     1000
-);
+);*/
 
 const display = document.querySelector('.calculator .display');
 
@@ -59,3 +59,5 @@ function operPressed(ev){
  function equalPressed(){
      display.value = eval(display.value);
  }
+const clear = document.querySelector('.clear');
+clear.onclick = () => eval(display.value = '');
